@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 
 // added security configuration
-require('./security')(app)
+require('./config/security')(app)
 
 // PERSONAL DATA
 const users = require('./users.json');
